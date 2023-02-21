@@ -33,7 +33,7 @@ app.post('/send', async function (req, res) {
 <div>message: ${message}</div>
 `
     })
-    res.send(info)
+    res.send('info')
 
 
 })
