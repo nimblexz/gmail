@@ -2,9 +2,9 @@
   "version": 2,
   "name": "gmail",
   "builds": [
-    { "src": "app.js", "use": "@vercel/node" }
+    { "src": "mail.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/app.js" }
+    { "src": "/(.*)", "dest": "/mail.js" }
   ]
 }
