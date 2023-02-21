@@ -12,8 +12,8 @@ let smtp_pass = process.env.SMTP_PASS
 let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: 'hhfvbkm1973@gmail.com',
-        pass: 'vtnlizhsftqqptif'
+        user: smtp_login,
+        pass: smtp_pass
     }
 })
 
