@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
     res.send('Hello World');
 })
 
-app.post('/', async function (req, res) {
+app.post('/send', async function (req, res) {
     let {name, eMail, message} = req.body
     let info = await transporter.sendMail({
         from: 'HR WANTS ME',
